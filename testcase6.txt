@@ -1,0 +1,30 @@
+_sumN  input parameter list [int d5cc34]  
+output parameter list[real d3];
+	type int : b5b567;
+	b5b567 <--- 1;
+	d3 <--- 0.00;
+	while ( b5b567 <= d5cc34)
+		read( c3bd);
+		d3 <--- d3 + c3bd;
+		b5b567 <--- b5b567 + 1;
+	endwhile
+	return [d3];
+end
+
+
+_main
+	type int :b3;
+	type real :c4bd56;
+	b3 <--- 7;
+	[c4bd56]<--- call _sumN with parameters [b3];
+
+	if((~(c4bbb == 0)) &&& (c4bbb > 78.56)) 
+	then
+		c6<--- d4cbcd5677/c4bbb;
+	else
+		write(c4bbb);
+	endif
+	
+	write(c4bd56);
+	return;
+end

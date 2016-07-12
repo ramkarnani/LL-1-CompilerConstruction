@@ -1,0 +1,15 @@
+
+% Program takes user input and prints all the odd numbers less than or equal to input number.
+
+_main 
+	
+	type int : b5;
+	type int : c5;
+	b5 <--- 1;
+	read(c5);
+	while(~(b5 >c5))
+		write(b5);
+		b5 <--- b5 +2;		
+	endwhile
+	return;
+end

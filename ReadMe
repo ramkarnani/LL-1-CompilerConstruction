@@ -1,0 +1,36 @@
+// Batch - 3
+// Ram Karnani 2012B3A7750P
+// Akath Singh Dua 2012B4A7333P
+
+
+Following instructions need to be followed for running the program successfully.
+
+1) Use make file to compile the program:
+
+Shell Command: 
+
+To run program: 
+make 
+
+2) Command Line arguments to be given:
+
+./compiler <testcase.txt> <code.asm>.
+
+Example:
+./compiler main1.txt code.asm
+
+
+3) Run the assembly code on NASM Simulator
+
+Example:
+
+nasm -f elf64 -l code.lst  code.asm && gcc -o code code.o
+./code
+
+
+
+
+
+#############      TEST CASES DESCRIPTION     ############
+
+main5.txt --> Program takes user input and prints all the odd numbers less than or equal to input number. 

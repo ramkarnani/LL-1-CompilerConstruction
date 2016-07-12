@@ -1,0 +1,35 @@
+
+_main
+	
+	record #arks
+		type real : maths; 
+		type real: physics; 
+		type real: chemistry;
+	endrecord;
+
+
+	record #marks
+		type real : maths; 
+		type real: physics; 
+		type real: chemistry;
+	endrecord;
+
+	type record #arks : d4;
+	type record #marks : d3;
+	type int : b6;
+	type int : c5;
+	type int : b7: global;
+	type int : b3;
+	type real : c3;
+
+	b3 <--- 1+(3*4)/5;
+	d3 <--- d3 + d4 ;
+	d4.maths <--- 0.00 + 2.00;
+	b5c6.physics <--- 0.00;
+	b5c6.chemistry <---0.00;
+	write(c4bd56);
+	return ;
+end
+
+
+

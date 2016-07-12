@@ -1,0 +1,37 @@
+	
+
+_computeFunctionValue input parameter list[int c3]
+output parameter list [real c6,int c4,int c5];
+	type real : d4cbcd5677 ;
+	type real : c4bbb:global;
+	c6 <--- 5000.79 + c4bbb;
+	d4cbcd5677<--- ((c3 + 2*c4)-(c5-5))/ 4;
+	return [c6];
+end
+
+
+_computeFunctionValue input parameter list[int d3]
+output parameter list [real c6,int c4,int c5];
+	type real : d4cbcd5677 ;
+	type real : c4bbb:global;
+	c6 <--- 5000.79 + c4bbb;
+	d4cbcd5677<--- ((c3 + 2*c4)-(c5-5))/ 4;
+	c4 <--- 1;
+	return [c6];
+end
+
+
+%The following program computes the function value for the user defined input
+_main 
+	type int : b5 ;
+	type int : d5cb34567:global;
+	type int :  b3b444 ;
+	type real: b3;
+	b5 <--- 1;
+	read(d5cb34567);
+	read(b3b444);
+
+	 call _computeFunctionValue with parameters [b5, d5cb34567, b3b444];
+	write(c3);
+	return;
+end

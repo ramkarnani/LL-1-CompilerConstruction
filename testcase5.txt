@@ -1,0 +1,40 @@
+_computeFunctionValue input parameter list[int c7, int c4, int c5]
+output parameter list [real c6,int c3];
+	type real : d4cbcd5677 ;
+	type real : c4bbb:global;
+	c6 <--- 5000.79 + c4bbb;
+	d4cbcd5677<--- ((c3 + 2*c4)-(c5-5))/ 4;
+
+	return [c6,c3];
+end
+
+_main 
+	record #marks
+		type int : maths; 
+		type int: physics; 
+		type int: chemistry;
+	endrecord;
+
+	type record #marks : d4;
+	type int : b5;
+	type real : b6;
+	type int : d5cb34567;
+	type record #marks : b3c2;
+
+	b5 <--- 1;
+
+	read(d5cb34567);
+	d4.maths <--- 0;
+	d4.physics <--- 0;
+	d4.chemistry <---0;
+	while(~(b5 == 5))
+		while(~(b5 < 10))
+			%b5 <--- 2; 
+			while(~(d5cb34567 < 11))
+				[b6,b5]<--- call _computeFunctionValue with parameters [b5,b5,b5];
+			endwhile
+		endwhile
+	endwhile
+	write(d4);
+	return;
+end
